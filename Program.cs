@@ -2,3 +2,14 @@
 //  Первоначальный массив можно ввести с клавиатуры, либо  задать на старте выполнения алгоритма. 
 //  При решении не рекомендуется пользоваться коллекциям, лучше обойтись исключительно массивами.
 
+Console.WriteLine("Введите элементы массива разделяя пробелом: ");
+string input = Console.ReadLine() ??"";
+string [] resultArray = input.Split(' ');
+
+for (int i = 0; i < resultArray.Length; i++)
+{
+    if (resultArray[i].Length <= 3 )
+    {
+    Console.Write($"{resultArray[i]}, ");
+    }
+}
